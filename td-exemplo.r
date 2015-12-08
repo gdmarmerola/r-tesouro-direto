@@ -114,8 +114,7 @@ plot_df = melt(to_plot, 'dates')
 
 # criando o gráfico
 plt = ggplot(plot_df,aes(x=dates,y=value,group=variable,color=variable)) 
-plt + geom_line() + scale_x_date() + ggtitle("Portfolio corrente")
-
+plt + geom_line(aes(group=variable),size=1) + scale_x_date() + ggtitle("Portfolio corrente") 
 
 
 
