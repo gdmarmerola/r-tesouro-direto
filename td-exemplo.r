@@ -87,27 +87,32 @@ ipca_2020_cups = calcular_cupons(serie_ipca_2020,
 
 ## desempenho geral
 
+# juntar projecões em um único dataframe
 merged_proj = merge.xts(serie_prefix_2017, serie_ipca_2019, 
                         serie_ipca_2020, ipca_2020_cups) #["/2015-09-04"]
 
+# série que mostra o fluxo de pagamentos
 fluxo_resgate = valor_de_resgate(merged_proj,
                                  "2017-01-01",
                                  "2019-05-15",
                                  "2020-08-15")
       
-# escolher datas de análise
-
+# série que mostra o total investido 
 imobilizado = rowSums(merged_proj[,1:3], na.rm=TRUE)
 
+# fluxo de pagamentos: removendo NAs
 resgates = rowSums(merge.xts(merged_proj[,4], fluxo_resgate), na.rm=TRUE)
 
+# unindo os dataframes que serão plotados
 to_plot = cbind(data.frame(merged_proj), 
                 data.frame(imobilizado),
                 data.frame(resgates),
                 data.frame(dates = index(merged_proj)))
 
+# formatando o dataframe na forma adequada para o ggplo2
 plot_df = melt(to_plot, 'dates')
 
+# criando o gráfico
 plt = ggplot(plot_df,aes(x=dates,y=value,group=variable,color=variable)) 
 plt + geom_line() + scale_x_date() + ggtitle("Portfolio corrente")
 
