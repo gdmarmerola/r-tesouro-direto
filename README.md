@@ -266,7 +266,7 @@ plot(serie_ipca_constante)
 
 ![](https://github.com/gdmarmerola/r-tesouro-direto/blob/master/ipca-constante.png)
 
- #### IPCA crescente
+#### IPCA crescente
 
 Neste caso, vamos supor que o IPCA aumente no ritmo de 2% ao ano. Para representar isto, utilizamos um objeto do tipo *list()*, *taxa_crescente*.
 
