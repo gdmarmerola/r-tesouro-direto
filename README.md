@@ -185,7 +185,7 @@ plt + geom_line() + scale_x_date() + ggtitle("Portfolio corrente")
 
 ```
 
-Em azul escuro, é mostrado o total investido e sua evolução com o tempo. Em lilás, o "fluxo de caixa" do investidor. Cada investimento é representado por uma linha (não há pagamento de cupons) ou duas (há pagamento de cupons). 
+Em azul escuro, é mostrado o total investido e sua evolução com o tempo. Em lilás, o "fluxo de caixa" do investidor. Cada investimento é representado por uma linha (se não houver pagamento de cupons) ou duas (se houver pagamento de cupons). 
 
 ![](https://github.com/gdmarmerola/r-tesouro-direto/blob/master/exemplo-plot.png)
 
