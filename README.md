@@ -29,7 +29,7 @@ proj_tesdir(valor_ini, juros_anuais, data_ini, data_fim)
 ```
 
 * valor_ini: montante inicial do investimento
-* juros_anuais: número que represente a média dos juros no período, ou lista que associe um valor de juros por ano (mais na seção **Funcionalidades**)
+* juros_anuais: número que represente a média prevista dos juros no período, ou lista que associe um valor de juros por ano (mais na seção **Funcionalidades**)
 * data_ini, data_fim: datas de início e fim do investimento
 
 #### calcular_cupons: calcular pagamento de cupons
@@ -37,7 +37,7 @@ proj_tesdir(valor_ini, juros_anuais, data_ini, data_fim)
 ```{r}
 calcular_cupons(serie_td, tx_cupom, data_ini, data_fim)
 ```
-* serie_td: serie temporal do investimento
+* serie_td: série temporal do principal
 * juros_anuais: juros associados ao pagamento de cupons
 * data_ini, data_fim: datas de início e fim do investimento
 
