@@ -4,11 +4,11 @@
 
 No período recente de alta da taxa de juros e inflação crescente (2014-2015), o Tesouro Direto tem se mostrado uma boa opção de investimento. Visualizar a evolução de diversas carteiras hipotéticas e compará-las ao longo do tempo pode ajudar significativamente o investidor a fazer uma alocação de recursos alinhada com seus objetivos. Este pacote usa alguns recursos de *web scraping* e o pacote gráfico *ggplot2* do R para fazer algumas estimativas e projeções de investimentos no tesouro direto.
 
-* **Investimentos implementados:**
+* **Modalidades implementadas:**
 	*  Tesouro Prefixado (LTN)
 	*  Tesouro IPCA (NTN-B Principal)
 	*  Tesouro IPCA com Juros Semestrais (NTN-B)
-*  **Não-implementados (trabalhos futuros):**
+*  **Não-implementadas (to-do):**
 	* Tesouro Prefixado com Juros Semestrais (NTN-F)
 	* Tesouro Selic (LFT)
 * **Pacotes necessários:**
