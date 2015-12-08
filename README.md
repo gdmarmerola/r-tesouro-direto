@@ -241,7 +241,7 @@ Para sanar o problema de utilizar uma única taxa de juros para todo o período 
 * IPCA crescente ao longo do investimento
 * IPCA decrescente ao longo do investimento
 
-Nota: a variação das taxas são um pouco exageradas de forma que seja visível as diferenças entre os exemplos.
+Nota: a variação das taxas são um pouco exageradas de forma que as diferenças entre os exemplos sejam visíveis.
 
 #### IPCA constante
 
