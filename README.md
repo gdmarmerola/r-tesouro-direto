@@ -102,7 +102,7 @@ serie_ipca_2019 = proj_tesdir(ipca_2019[['montante_ini']],
 
 #### Tesouro IPCA com Juros Semestrais
 
-Nesta modalidade há o pagamento de juros. Portanto, no objeto *list()* é colocada uma entrada *tx_cupom* para representar os juros semestrais. Ao final, são criadas duas séries, uma representando o montante principal e outra o pagamento de cupons.
+Nesta modalidade há o pagamento de juros semestrais. Portanto, no objeto *list()* é colocada uma entrada *tx_cupom* para representar os juros semestrais. Ao final, são criadas duas séries, uma representando o montante principal e outra o pagamento de cupons.
 
 ```{r}
 ### Tesouro IPCA com cupons semestrais (NTN-B) ###
