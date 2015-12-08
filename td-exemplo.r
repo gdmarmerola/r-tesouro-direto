@@ -38,7 +38,7 @@ print( extrair_selic() )
 # duracão do investimento: 1 ano (01-01-2016 até 01-01-2017)
 prefix_2017 = list(montante_ini = 3000, 
                    tx_anual = 13,
-                   data_ini = "2016-01-01",
+                   data_ini = "2015-01-01",
                    data_venc = "2017-01-01")
 
 # cria uma série temporal (xts) com a projecão do investimento
@@ -69,7 +69,7 @@ vna_exemplo = 3000
 ipca_2020 = list(montante_ini = 2*vna_exemplo,
                  tx_anual = extrair_ipca(),
                  tx_cupom = 6,
-                 data_ini = "2016-02-01",
+                 data_ini = "2015-07-01",
                  data_venc = "2020-08-15"
                  )
 
@@ -115,6 +115,3 @@ plot_df = melt(to_plot, 'dates')
 # criando o gráfico
 plt = ggplot(plot_df,aes(x=dates,y=value,group=variable,color=variable)) 
 plt + geom_line(aes(group=variable),size=1) + scale_x_date() + ggtitle("Portfolio corrente") 
-
-
-
