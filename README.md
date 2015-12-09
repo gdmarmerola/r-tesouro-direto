@@ -181,8 +181,7 @@ Finalmente, podemos plotar as séries.
 ```{r}
 # criando o gráfico
 plt = ggplot(plot_df,aes(x=dates,y=value,group=variable,color=variable)) 
-plt + geom_line() + scale_x_date() + ggtitle("Portfolio corrente")
-
+plt + geom_line(aes(group=variable),size=1) + scale_x_date() + ggtitle("Portfolio corrente") 
 ```
 
 Em azul escuro, é mostrado o total investido e sua evolução com o tempo. Em lilás, o "fluxo de caixa" do investidor. Cada investimento é representado por uma linha (se não houver pagamento de cupons) ou duas (se houver pagamento de cupons). 
